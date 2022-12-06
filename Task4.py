@@ -6,8 +6,10 @@
 - 2 -> 10
 '''
 num10 = int(input('Введите число: '))
-num2 = ''
-while num10 != 0:
-    num2 += str(num10 % 2)
-    num10 //= 2
-print(num2[::-1])
+def findBinary(num10):
+    num2 = ''
+    while num10 != 0:
+        num2 += str(num10 % 2)
+        num10 //= 2
+    print(num2[::-1])
+findBinary(num10)
